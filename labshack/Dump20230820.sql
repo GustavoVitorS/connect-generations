@@ -28,7 +28,7 @@ CREATE TABLE `termos` (
   `significado` text NOT NULL,
   `tag` enum('Jovem','Idoso') DEFAULT NULL,
   PRIMARY KEY (`idTermo`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `termos` (
 
 LOCK TABLES `termos` WRITE;
 /*!40000 ALTER TABLE `termos` DISABLE KEYS */;
-INSERT INTO `termos` VALUES (1,'Dar uma canja','Fazer algo com facilidade','Idoso'),(2,'Ninguém sabe o que se passa na cabeça do palhaço','Esse termo significa que o palhaço pode estar sorridente, porém, ninguém sabe o que realmente se passa na cabeça dele.','Jovem'),(3,'Ficar de butuca','Ficar observando algo com atenção.','Idoso'),(4,'Poggers','Usada para expressar excitação ou excesso de alegria','Jovem');
+INSERT INTO `termos` VALUES (1,'Dar uma canja','Fazer algo com facilidade','Idoso'),(2,'Ninguém sabe o que se passa na cabeça do palhaço','Esse termo significa que o palhaço pode estar sorridente, porém, ninguém sabe o que realmente se passa na cabeça dele.','Jovem'),(3,'Ficar de butuca','Ficar observando algo com atenção.','Idoso'),(4,'Poggers','Usada para expressar excitação ou excesso de alegria','Jovem'),(5,'Bafafá','É o mesmo que confusão ou bagunça.','Idoso'),(6,'Barbeiro','É um motorista ruim, que não sabe dirigir direito.','Idoso'),(7,'Chá de cadeira','Tomar um chá de cadeira é o mesmo que ter que ficar esperando por muito tempo.','Idoso'),(8,'De lascar o cano','Algo é muito ruim.','Idoso'),(9,'Marcar touca','Perder uma oportunidade, dar bobeira.','Idoso'),(10,'Na boca de espera','É quando você está prestes a conseguir alguma coisa.','Idoso'),(11,'Boa pinta','Pessoa é bonita, de boa aparência.','Idoso'),(12,'Borogodó','Significa charme, sensualidade.','Idoso'),(13,'Broto','É o mesmo que garota bonita.','Idoso'),(14,'Bulhufas','Significa o mesmo que nada, coisa nenhuma.','Idoso'),(15,'Cafona','Algo fora de moda, brega','Idoso');
 /*!40000 ALTER TABLE `termos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-20 13:19:32
+-- Dump completed on 2023-08-20 19:54:12

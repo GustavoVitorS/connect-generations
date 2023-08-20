@@ -13,7 +13,7 @@ function updateValue(e) {
   } else {
     let apagar = document.getElementById("giriaContainer")
     apagar.innerHTML = "";
-    fetch('http://localhost:8080/termos/listarFiltrado?termo=' + valor + "&size=10")
+    fetch('http://localhost:8080/termos/listarFiltrado?termo=' + valor)
     .then(response => response.json())
     .then(data => {
       dados = data;
@@ -41,7 +41,7 @@ function updateValue(e) {
 }
 
 function updateInicial() {
-  fetch('http://localhost:8080/termos/listar?size=10')
+  fetch('http://localhost:8080/termos/listar')
   .then(response => response.json())
   .then(data => {
     let apagar = document.getElementById("giriaContainer")
