@@ -30,16 +30,28 @@ body {
 .giria-container {
   background-color: white;
   border: 1px solid #ccc;
-  padding: 185px;
+  padding: 20px;
   max-width: 600px;
-  width: 80%;
+  width: 100%;
+  /* Alterado para 100% */
   height: 80vh;
-  overflow-y: auto;
+  overflow-y: hidden;
+  /* Alterado para hidden */
   margin-top: 20px;
+  display: flex;
+  /* Adicionado para permitir crescimento lateral */
+  flex-wrap: wrap;
+  /* Adicionado para quebrar as divs em linhas */
 }
 
 .giria {
+  margin-right: 10px;
+  /* Adicionado margem à direita para separar as divs */
   margin-bottom: 10px;
   padding: 5px;
   border: 1px solid #eee;
+  flex: 1;
+  /* Adicionado para permitir que as divs cresçam igualmente */
+  box-sizing: border-box;
+  /* Adicionado para incluir borda e padding na largura total */
 }
