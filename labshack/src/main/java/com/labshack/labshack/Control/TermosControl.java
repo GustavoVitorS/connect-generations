@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/termos")
 public class TermosControl {
@@ -23,6 +23,12 @@ public class TermosControl {
     @GetMapping("/listar")
     public ResponseEntity<Page<Termos>> list(Pageable pageable) {
         var termos = repository.findAll(pageable);
+        return ResponseEntity.ok(termos);
+    }
+
+    @GetMapping("/listarFiltrado")
+    public ResponseEntity<Page<Termos>> listFilter(@RequestParam String termo, Pageable pageable) {
+        var termos = repository.findByTermoContaining(termo, pageable);
         return ResponseEntity.ok(termos);
     }
 }

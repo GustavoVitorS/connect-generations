@@ -36,10 +36,13 @@ body {
   height: 80vh;
   overflow-y: hidden;
   margin-top: 20px;
-  display: flex;
   flex-wrap: wrap;
 }
 
+.explicacao {
+  color: #87CEEB;
+  font-size: 10;
+}
 .giria {
   margin-right: 10px;
   margin-bottom: 10px;

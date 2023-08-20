@@ -25,4 +25,8 @@ public class Termos {
 
     @Column(name = "tag", nullable = false)
     private String tag;
+
+    public String getTermo() {
+        return this.termo;
+    }
 }
