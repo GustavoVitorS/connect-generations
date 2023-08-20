@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 body {
-  background: linear-gradient(45deg, #87CEEB, #1E90FF);
+  background: linear-gradient(90deg, #87CEEB, #1E90FF);
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.giria-container {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 185px;
+  max-width: 600px;
+  width: 80%;
+  height: 80vh;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.giria {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #eee;
 }
